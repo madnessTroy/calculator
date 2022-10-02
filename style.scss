@@ -1,0 +1,36 @@
+#calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 768px;
+
+    .main {
+        border: 1px solid #ccc;
+        border-radius: 1rem;
+        box-shadow: -12px 10px 15px -3px rgba(0,0,0,0.1);
+
+        &--input {
+            input {
+                background-color: #252525;
+                border: none;
+                text-align: right;
+                font-size: 2rem;
+            }
+        }
+
+        &--keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+
+            button {
+                font-size: 1.5rem;
+            }
+
+            .equal-sign {
+                grid-area: 2 / 4 / 6 / 5;
+            }
+        }
+    }
+}
